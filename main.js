@@ -69,7 +69,7 @@ function toggleLike(film, btn) {
         likedFilms.push({
             id: film.id,
             name: film.name,
-            image: film.image.medium || film.image,
+            image: film.image.medium,
             rating: film.rating?.average ?? 'Немає'
         });
         localStorage.setItem('likedFilms', JSON.stringify(likedFilms));
@@ -92,3 +92,4 @@ function updateLikeIcon(btn, isLiked) {
 console.log(main, mainContent);
 
 mainSection();
+
