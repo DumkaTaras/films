@@ -85,9 +85,10 @@ function toggleLike(film, btn) {
 // Змінюємо іконку лайку
 function updateLikeIcon(btn, isLiked) {
     btn.innerHTML = isLiked
-        ? `<img src="/images/images.png" alt="like" width="18px" height="18px">`
-        : `<img src="/images/images__1_-removebg-preview.png" alt="like" width="16px" height="18px">`;
+        ? `<img src="./images/images.png" alt="like" width="18px" height="18px">`
+        : `<img src="./images/images__1_-removebg-preview.png" alt="like" width="16px" height="18px">`;
 }
 
 console.log(main, mainContent);
+
 mainSection();
