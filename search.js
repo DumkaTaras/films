@@ -121,7 +121,7 @@ function renderLikedFilm(data) {
             <h3>${data.name}</h3>
             <img src="${data.image.medium || data.image}" alt="${data.name}" width="100px" height="150px">
             <figcaption>Рейтинг: ${data.rating.average}</figcaption>
-            <img src="/images/images.png" alt="like" width="18px" height="18px" class="likedIcon" style="cursor:pointer">
+            <img src="./images/images.png" alt="like" width="18px" height="18px" class="likedIcon" style="cursor:pointer">
         </figure>`;
 
     const likedIcon = li.querySelector('.likedIcon');
@@ -140,6 +140,7 @@ function removeFilmFromLikedList(id) {
 function updateLikeIcon(btn, isLiked) {
     if (!btn) return;
     btn.innerHTML = isLiked
-        ? `<img src="/images/images.png" alt="like" width="18px" height="18px">`
+        ? `<img src="./images/images.png" alt="like" width="18px" height="18px">`
         : `<img src="./images/images__1_-removebg-preview.png" alt="like" width="16px" height="20px">`;
+
 }
