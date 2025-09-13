@@ -120,7 +120,7 @@ function renderLikedFilm(data) {
         <a href="${data.url}" target="blank"></a>
             <h3>${data.name}</h3>
             <img src="${data.image.medium || data.image}" alt="${data.name}" width="100px" height="150px">
-            <figcaption>Рейтинг: ${data.rating.average}</figcaption>
+            <figcaption>Рейтинг: ${data.rating?.average ?? 'Немає'}</figcaption>
             <img src="./images/images.png" alt="like" width="18px" height="18px" class="likedIcon" style="cursor:pointer">
         </figure>`;
 
@@ -144,3 +144,4 @@ function updateLikeIcon(btn, isLiked) {
         : `<img src="./images/images__1_-removebg-preview.png" alt="like" width="16px" height="20px">`;
 
 }
+
