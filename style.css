@@ -6,7 +6,6 @@ body {
     margin: 0 auto;
     padding: 0 auto;
     box-sizing: border-box;
-    height: 1000px;
 
 }
 
@@ -128,7 +127,7 @@ h2 {
     }
 
     to {
-        margin-left: -40px;
+        margin-left: -20px;
     }
 }
 
@@ -230,4 +229,106 @@ main{
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+
+    .header {
+        font-size: 18px;
+        position: static;
+        margin-bottom: 15px;
+    }
+
+    .menu {
+        width: 100px;
+        padding: 15px;
+    }
+    nav{
+        margin-left: -40px;
+    }
+    #list {
+        gap: 10px;
+        padding-top: 60px;
+
+    }
+
+    #mainContent{
+        margin-left: 150px;
+        padding: 50px;
+    }
+    .container {
+        width: 300px;
+        padding: 10px;
+    }
+
+    #searchFilm {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    #btn {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .likeContent,
+    .mainCash {
+        width: 100%;
+        height: auto;
+    }
+
+    .likeFilm {
+        width: 100px;
+        height: 240px;
+    }
+    #randomFilms{
+        margin-left: -40px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Планшети (від 601px до 1024px) */
+@media (max-width: 1024px) and (min-width: 601px) {
+    .container {
+        width: 90%;
+    }
+
+    .likeContent,
+    .mainCash {
+        width: 90%;
+    }
+
+    #searchFilm {
+        width: 70%;
+    }
+
+    .likeFilm {
+        width: 150px;
+        height: 260px;
+    }
+}
+
+/* Великі екрани (понад 1024px) */
+@media (min-width: 1025px) {
+    .container {
+        width: 700px;
+    }
+
+    .likeContent {
+        width: 800px;
+        height: 350px;
+    }
+
+    .mainCash {
+        width: 800px;
+    }
+
+    .likeFilm {
+        width: 120px;
+        height: 280px;
+    }
 }
