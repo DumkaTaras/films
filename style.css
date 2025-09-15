@@ -124,6 +124,9 @@ h2 {
 @keyframes slideIn {
     from {
         margin-left: -60px;
+        menu{
+            width: 100px;
+        }
     }
 
     to {
@@ -244,11 +247,12 @@ main{
     }
 
     .menu {
-        width: 100px;
+        width: 90px;
         padding: 15px;
+
     }
     nav{
-        margin-left: -40px;
+        margin-left: -30px;
     }
     #list {
         gap: 10px;
@@ -257,12 +261,14 @@ main{
     }
 
     #mainContent{
-        margin-left: 150px;
-        padding: 50px;
+        margin-left: 120px;
+        padding: 20px;
+        margin-top: -50px;
+
     }
     .container {
-        width: 300px;
-        padding: 10px;
+        width: 100%;
+        margin-left: -10px;
     }
 
     #searchFilm {
